@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #1b1f3b;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+/* Formulario centrado en pantalla */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+/* Anchura adaptable */
+form,
+.normas {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    color: #1b1f3b;
+}
+
+/* Fieldset y legend */
+fieldset {
+    border: 2px solid #c9ccff;
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    color: #4a3fd1;
+}
+
+/* Espaciado entre campos */
+.campo {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+}
+
+.titulo-grupo {
+    font-weight: bold;
+    margin: 1rem 0 0.4rem;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+
+.opciones label {
+    display: inline;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Bordes y esquinas redondeadas */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #bbb;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Destacar el campo seleccionado */
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #4a3fd1;
+    box-shadow: 0 0 0 4px rgba(74, 63, 209, 0.25);
+    background-color: #f5f4ff;
+}
+
+/* Botones personalizados */
+.botones {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.15s, background-color 0.2s;
+}
+
+button[type="submit"] {
+    background-color: #4a3fd1;
+    color: #ffffff;
+}
+
+button[type="reset"] {
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+/* Efecto al pasar por encima de un botón */
+button[type="submit"]:hover {
+    background-color: #2f26a3;
+    transform: translateY(-2px);
+}
+
+button[type="reset"]:hover {
+    background-color: #c8c8c8;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #4a3fd1;
+}
+
+.aviso {
+    margin-top: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 480px) {
+
+    form,
+    .normas {
+        padding: 1.25rem;
+    }
+}
